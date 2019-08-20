@@ -14,8 +14,8 @@
 		341F6AF6230179F90097B519 /* ExerciseListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341F6AF4230179F90097B519 /* ExerciseListVC.xib */; };
 		341F6AF92301873E0097B519 /* CurrentWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6AF72301873E0097B519 /* CurrentWorkoutVC.swift */; };
 		341F6AFA2301873E0097B519 /* CurrentWorkoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341F6AF82301873E0097B519 /* CurrentWorkoutVC.xib */; };
-		341F6AFE23018A850097B519 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6AFC23018A850097B519 /* HomeVC.swift */; };
-		341F6AFF23018A850097B519 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341F6AFD23018A850097B519 /* HomeVC.xib */; };
+		341F6AFE23018A850097B519 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6AFC23018A850097B519 /* HistoryVC.swift */; };
+		341F6AFF23018A850097B519 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341F6AFD23018A850097B519 /* HistoryVC.xib */; };
 		341F6B052302AA000097B519 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B042302AA000097B519 /* SplashVC.swift */; };
 		341F6B0A2303EC5B0097B519 /* ExerciseListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B092303EC5B0097B519 /* ExerciseListDelegate.swift */; };
 		341F6B0D230587CC0097B519 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B0C230587CC0097B519 /* MainTabBarController.swift */; };
@@ -38,8 +38,8 @@
 		341F6AF4230179F90097B519 /* ExerciseListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListVC.xib; sourceTree = "<group>"; };
 		341F6AF72301873E0097B519 /* CurrentWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWorkoutVC.swift; sourceTree = "<group>"; };
 		341F6AF82301873E0097B519 /* CurrentWorkoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentWorkoutVC.xib; sourceTree = "<group>"; };
-		341F6AFC23018A850097B519 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		341F6AFD23018A850097B519 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		341F6AFC23018A850097B519 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		341F6AFD23018A850097B519 /* HistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
 		341F6B042302AA000097B519 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		341F6B092303EC5B0097B519 /* ExerciseListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDelegate.swift; sourceTree = "<group>"; };
 		341F6B0C230587CC0097B519 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -104,11 +104,10 @@
 		341F6AEF23015DAB0097B519 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				341F6B1023058CD30097B519 /* Profile */,
 				341F6B0B230587A00097B519 /* TabBar */,
-				341F6B032302A9D60097B519 /* Splash */,
-				341F6AFB23018A690097B519 /* Home */,
 				341F6AF223015E010097B519 /* CurrentWorkout */,
+				341F6AFB23018A690097B519 /* History */,
+				341F6B1023058CD30097B519 /* Profile */,
 				341F6AF123015DD80097B519 /* ExerciseList */,
 				341F6AF023015DB80097B519 /* Login */,
 			);
@@ -142,31 +141,24 @@
 			path = CurrentWorkout;
 			sourceTree = "<group>";
 		};
-		341F6AFB23018A690097B519 /* Home */ = {
+		341F6AFB23018A690097B519 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				341F6AFC23018A850097B519 /* HomeVC.swift */,
-				341F6AFD23018A850097B519 /* HomeVC.xib */,
+				341F6AFC23018A850097B519 /* HistoryVC.swift */,
+				341F6AFD23018A850097B519 /* HistoryVC.xib */,
 			);
-			path = Home;
+			path = History;
 			sourceTree = "<group>";
 		};
 		341F6B002302994C0097B519 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				341F6B152306CBC60097B519 /* RootVC.swift */,
 				34ECA92522F98FD600873D22 /* AppDelegate.swift */,
+				341F6B152306CBC60097B519 /* RootVC.swift */,
+				341F6B042302AA000097B519 /* SplashVC.swift */,
 				341F6B0E23058BBE0097B519 /* Theme.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		341F6B032302A9D60097B519 /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				341F6B042302AA000097B519 /* SplashVC.swift */,
-			);
-			path = Splash;
 			sourceTree = "<group>";
 		};
 		341F6B0B230587A00097B519 /* TabBar */ = {
@@ -289,7 +281,7 @@
 			files = (
 				341F6AFA2301873E0097B519 /* CurrentWorkoutVC.xib in Resources */,
 				341F6AF6230179F90097B519 /* ExerciseListVC.xib in Resources */,
-				341F6AFF23018A850097B519 /* HomeVC.xib in Resources */,
+				341F6AFF23018A850097B519 /* HistoryVC.xib in Resources */,
 				3418A54922F998EA00FE89E8 /* GoogleService-Info.plist in Resources */,
 				341F6B1423058CF40097B519 /* ProfileVC.xib in Resources */,
 				34ECA92D22F98FD700873D22 /* Assets.xcassets in Resources */,
@@ -365,7 +357,7 @@
 				341F6AE622FAE2620097B519 /* UIViewExtension.swift in Sources */,
 				341F6AF5230179F90097B519 /* ExerciseListVC.swift in Sources */,
 				341F6B0D230587CC0097B519 /* MainTabBarController.swift in Sources */,
-				341F6AFE23018A850097B519 /* HomeVC.swift in Sources */,
+				341F6AFE23018A850097B519 /* HistoryVC.swift in Sources */,
 				341F6AF92301873E0097B519 /* CurrentWorkoutVC.swift in Sources */,
 				341F6B162306CBC60097B519 /* RootVC.swift in Sources */,
 				341F6AE822FC10DB0097B519 /* Exercise.swift in Sources */,

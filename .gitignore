@@ -171,3 +171,4 @@ Dependencies/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/xcode,swift,macos,cocoapods,objective-c
+Source/Supporting Files/GoogleService-Info\.plist

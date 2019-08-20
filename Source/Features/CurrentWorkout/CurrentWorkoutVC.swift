@@ -52,6 +52,12 @@ class CurrentWorkoutVC: UIViewController {
         }
     }
     
+    @IBAction func doneBtnTapped(_ sender: Any) {
+    }
+    
+    @IBAction func cancelBtnTapped(_ sender: Any) {
+    }
+    
 }
 
 extension CurrentWorkoutVC : UITableViewDataSource, UITableViewDelegate{

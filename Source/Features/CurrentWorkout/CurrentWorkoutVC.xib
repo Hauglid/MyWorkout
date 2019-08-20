@@ -22,31 +22,61 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuA-AE-hqh">
-                    <rect key="frame" x="20" y="88" width="374" height="77"/>
+                    <rect key="frame" x="20" y="88" width="374" height="76.5"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="64"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V4A-Mv-tyU">
-                    <rect key="frame" x="0.0" y="197" width="414" height="665"/>
+                    <rect key="frame" x="0.0" y="196.5" width="414" height="552.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="TyS-Dq-sl7"/>
                         <outlet property="delegate" destination="-1" id="i21-TC-olr"/>
                     </connections>
                 </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P9W-GE-Wj7">
+                    <rect key="frame" x="0.0" y="749" width="414" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fur-Ap-jUN">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="64"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnTapped:" destination="-1" eventType="touchUpInside" id="MyF-po-oNl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpo-e9-GpW">
+                            <rect key="frame" x="207" y="0.0" width="207" height="64"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="doneBtnTapped:" destination="-1" eventType="touchUpInside" id="ibr-4I-J4v"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="JnB-Tl-D2B"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="P9W-GE-Wj7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1ek-rJ-Jj1"/>
                 <constraint firstItem="UuA-AE-hqh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Iu-KK-wy0"/>
                 <constraint firstItem="V4A-Mv-tyU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7rl-ag-zOx"/>
+                <constraint firstItem="P9W-GE-Wj7" firstAttribute="top" secondItem="V4A-Mv-tyU" secondAttribute="bottom" id="Ct5-oE-PMn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="P9W-GE-Wj7" secondAttribute="bottom" id="EQT-4y-rcv"/>
                 <constraint firstItem="V4A-Mv-tyU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kn4-OC-B7U"/>
                 <constraint firstItem="UuA-AE-hqh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S5K-55-SVn"/>
                 <constraint firstItem="V4A-Mv-tyU" firstAttribute="top" secondItem="UuA-AE-hqh" secondAttribute="bottom" constant="32" id="k1Q-ke-XCE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UuA-AE-hqh" secondAttribute="trailing" constant="20" id="kxQ-u2-cia"/>
-                <constraint firstItem="V4A-Mv-tyU" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="n3v-Av-jfm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P9W-GE-Wj7" secondAttribute="trailing" id="tPG-HL-vFs"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="110.49107142857143"/>
         </view>

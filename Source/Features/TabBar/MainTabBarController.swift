@@ -17,18 +17,20 @@ class MainTabBarController: UITabBarController {
     }
     
     func setupViewControllers() {
+        let currentWorkoutVC = CurrentWorkoutVC()
+        let currentWorkoutNavigationController = UINavigationController(rootViewController: currentWorkoutVC)
+        currentWorkoutNavigationController.tabBarItem.image = UIImage(named: "person")
         
-        let homeController = HomeVC()
-        let homeNavigationController = UINavigationController(rootViewController: homeController)
+        let historyVC = HistoryVC()
+        let homeNavigationController = UINavigationController(rootViewController: historyVC)
         homeNavigationController.tabBarItem.image = UIImage(named: "dumbbell")
-        homeNavigationController.tabBarItem.selectedImage = UIImage(named: "dumbbell")
+        
         
         let userProfileController = ProfileVC()
         let userProfileNavigationController = UINavigationController(rootViewController: userProfileController)
         userProfileNavigationController.tabBarItem.image = UIImage(named: "person")
-        userProfileNavigationController.tabBarItem.selectedImage = UIImage(named: "person")
-        
-        viewControllers = [homeNavigationController, userProfileNavigationController]
+                
+        viewControllers = [currentWorkoutNavigationController, homeNavigationController, userProfileNavigationController]
         
     }
     
