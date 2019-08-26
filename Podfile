@@ -11,5 +11,7 @@ target 'MyWorkout' do
   pod 'GoogleSignIn'
   # Pods for MyWorkout
   pod 'CodableFirebase'
+  
+  pod 'SwiftIcons', '~> 2.3.2'
 
 end

@@ -20,6 +20,7 @@ class CurrentWorkoutVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Current Workout"
         //getData()
         dateLabel.text = "19. juli"
         let button1 = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(getExercises))

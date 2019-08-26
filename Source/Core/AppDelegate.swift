@@ -21,11 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = RootVC()
         window?.makeKeyAndVisible()
-
+        Theme.current.apply()
+        
         return true
     }
     
