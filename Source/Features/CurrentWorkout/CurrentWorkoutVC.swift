@@ -25,7 +25,6 @@ class CurrentWorkoutVC: UIViewController {
         dateLabel.text = "19. juli"
         let button1 = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(getExercises))
         self.navigationItem.rightBarButtonItem  = button1
-        
     }
     
     @objc func getExercises(_ sender: Any) {
@@ -34,7 +33,7 @@ class CurrentWorkoutVC: UIViewController {
         self.navigationController?.pushViewController(exerciseListVC, animated: true)
     }
     
-    
+
     func getData(){
         let db = Firestore.firestore()
         var exercises = [Exercise]()

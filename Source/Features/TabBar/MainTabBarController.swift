@@ -10,12 +10,13 @@ import UIKit
 import FirebaseAuth
 import SwiftIcons
 
-class MainTabBarController: UITabBarController {
+class MainTabBarController: AppTabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         viewControllers = [
-           
+            
             getNavigationController(vc: CurrentWorkoutVC(), title: "Workout", icon: .googleMaterialDesign(.fitnessCenter)),
             getNavigationController(vc: HistoryVC(), title: "Previous", icon: .fontAwesomeSolid(.history)),
             getNavigationController(vc: ProfileVC(), title: "Settings", icon: .fontAwesomeSolid(.userCog))
@@ -24,11 +25,11 @@ class MainTabBarController: UITabBarController {
     }
     
     func getNavigationController(vc: UIViewController,title: String, icon: FontType ) -> UINavigationController{
-        let selectedColor: UIColor = Theme.current.primaryColor
-        let unselectedColor: UIColor = .lightGray
         
-        let navController = UINavigationController(rootViewController: vc)
-        navController.tabBarItem.setIcon(icon: icon, size: nil, textColor: unselectedColor, selectedTextColor: selectedColor )
+        let navController = AppNavigationController(rootViewController: vc)
+        navController.tabBarItem.setIcon(icon: icon)
+        navController.tabBarItem.selectedImage = navController.tabBarItem.selectedImage?.withRenderingMode(.alwaysTemplate)
+        navController.tabBarItem.image = navController.tabBarItem.image?.withRenderingMode(.alwaysTemplate)
         navController.tabBarItem.title = title
         return navController
     }

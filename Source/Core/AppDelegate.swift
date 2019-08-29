@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = RootVC()
         window?.makeKeyAndVisible()
-        Theme.current.apply()
         
         return true
     }

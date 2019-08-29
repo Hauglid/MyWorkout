@@ -15,51 +15,38 @@ class ProfileVC: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var lightButton: UIButton!
     @IBOutlet weak var darkButton: UIButton!
     @IBOutlet weak var btnThemeView: UIView!
-    @IBOutlet var backgroundView: UIView!
     
     @IBOutlet weak var backgroundExampleView: UIView!
     @IBOutlet weak var primaryExampleView: UIView!
     @IBOutlet weak var secondaryExampleView: UIView!
     @IBOutlet weak var tertiaryExampleView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
-        
+        setUpTheming()
+        setupView()
+    }
+    
+    func setupView() {
+        setupButtonView()
+        title = "Profile"
+    }
+    
+    func setupButtonView() {
         // add border to stackview
         btnThemeView.clipsToBounds = true
         btnThemeView.layer.borderColor = UIColor.black.cgColor
         btnThemeView.layer.borderWidth = 1
         btnThemeView.layer.cornerRadius = 30
-        title = "Profile"
-        updateTheme()
     }
-    
-    
     
     @IBAction func lightButtonTapped(_ sender: Any) {
-        Theme.Light.apply()
-        updateTheme()
+        themeProvider.currentTheme = AppTheme.light
+
     }
     @IBAction func darkButtonTapped(_ sender: Any) {
-        Theme.Dark.apply()
-        updateTheme()
-    }
-   
-    func updateTheme() {
-        // Update Example views
-        backgroundView.backgroundColor = Theme.current.backgroundColor
-        backgroundExampleView.backgroundColor = Theme.current.backgroundColor
-        primaryExampleView.backgroundColor = Theme.current.primaryColor
-        secondaryExampleView.backgroundColor = Theme.current.secondaryColor
-        tertiaryExampleView.backgroundColor = Theme.current.tertiaryColor
-        
-        
-        self.navigationController?.navigationBar.barTintColor = Theme.current.backgroundColor
-        self.navigationController?.navigationBar.titleTextAttributes = Theme.Helper.getNavigationTitleTextAttributes()
-        
-        self.tabBarController?.tabBar.barTintColor = Theme.current.backgroundColor
+        themeProvider.currentTheme = AppTheme.dark
     }
     
     @IBAction func logoutBtnTapped(_ sender: Any) {
@@ -72,4 +59,12 @@ class ProfileVC: UIViewController, GIDSignInUIDelegate {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         } }
+}
+
+extension ProfileVC: Themed{
+    func applyTheme(_ theme: AppTheme) {
+        view.backgroundColor = theme.backgroundColor
+    }
+    
+    
 }

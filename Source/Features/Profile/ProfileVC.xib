@@ -13,7 +13,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="MyWorkout" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundExampleView" destination="8mU-XF-6KS" id="7ew-Je-DfC"/>
-                <outlet property="backgroundView" destination="i5M-Pr-FkT" id="Vyw-3l-fJI"/>
                 <outlet property="btnThemeView" destination="uUp-ql-jrF" id="6QY-ek-71I"/>
                 <outlet property="darkButton" destination="UGm-df-o0c" id="cfo-jh-4JA"/>
                 <outlet property="lightButton" destination="jFv-mw-LR8" id="hhl-Jd-15C"/>
@@ -44,9 +43,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-df-o0c">
                                     <rect key="frame" x="187" y="0.0" width="187" height="128"/>
                                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="Dark">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
+                                    <state key="normal" title="Dark"/>
                                     <connections>
                                         <action selector="darkButtonTapped:" destination="-1" eventType="touchUpInside" id="jFf-Wb-UGx"/>
                                     </connections>

@@ -19,11 +19,18 @@
 		341F6B052302AA000097B519 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B042302AA000097B519 /* SplashVC.swift */; };
 		341F6B0A2303EC5B0097B519 /* ExerciseListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B092303EC5B0097B519 /* ExerciseListDelegate.swift */; };
 		341F6B0D230587CC0097B519 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B0C230587CC0097B519 /* MainTabBarController.swift */; };
-		341F6B0F23058BBE0097B519 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B0E23058BBE0097B519 /* Theme.swift */; };
 		341F6B1323058CF40097B519 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B1123058CF40097B519 /* ProfileVC.swift */; };
 		341F6B1423058CF40097B519 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341F6B1223058CF40097B519 /* ProfileVC.xib */; };
 		341F6B162306CBC60097B519 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F6B152306CBC60097B519 /* RootVC.swift */; };
 		346EDE8B23140291001E02E3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346EDE8A23140291001E02E3 /* Colors.xcassets */; };
+		34AC39212317DD9600F672D8 /* SubscribableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC391F2317DD9600F672D8 /* SubscribableValue.swift */; };
+		34AC39222317DD9600F672D8 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC39202317DD9600F672D8 /* Weak.swift */; };
+		34AC39272317DDA400F672D8 /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC39242317DDA300F672D8 /* ThemeProvider.swift */; };
+		34AC39282317DDA400F672D8 /* AppThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC39252317DDA300F672D8 /* AppThemeProvider.swift */; };
+		34AC39292317DDA400F672D8 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC39262317DDA300F672D8 /* AppTheme.swift */; };
+		34AC392B2317DF3C00F672D8 /* Themed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC392A2317DF3C00F672D8 /* Themed.swift */; };
+		34AC392F2317E03300F672D8 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC392D2317E03300F672D8 /* AppTabBarController.swift */; };
+		34AC39302317E03300F672D8 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC392E2317E03300F672D8 /* AppNavigationController.swift */; };
 		34ECA92622F98FD600873D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECA92522F98FD600873D22 /* AppDelegate.swift */; };
 		34ECA92822F98FD600873D22 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECA92722F98FD600873D22 /* LoginVC.swift */; };
 		34ECA92D22F98FD700873D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ECA92C22F98FD700873D22 /* Assets.xcassets */; };
@@ -44,11 +51,18 @@
 		341F6B042302AA000097B519 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		341F6B092303EC5B0097B519 /* ExerciseListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDelegate.swift; sourceTree = "<group>"; };
 		341F6B0C230587CC0097B519 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		341F6B0E23058BBE0097B519 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		341F6B1123058CF40097B519 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		341F6B1223058CF40097B519 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		341F6B152306CBC60097B519 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		346EDE8A23140291001E02E3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		34AC391F2317DD9600F672D8 /* SubscribableValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribableValue.swift; sourceTree = "<group>"; };
+		34AC39202317DD9600F672D8 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		34AC39242317DDA300F672D8 /* ThemeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeProvider.swift; sourceTree = "<group>"; };
+		34AC39252317DDA300F672D8 /* AppThemeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppThemeProvider.swift; sourceTree = "<group>"; };
+		34AC39262317DDA300F672D8 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		34AC392A2317DF3C00F672D8 /* Themed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themed.swift; sourceTree = "<group>"; };
+		34AC392D2317E03300F672D8 /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		34AC392E2317E03300F672D8 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		34ECA92222F98FD600873D22 /* MyWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECA92522F98FD600873D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34ECA92722F98FD600873D22 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -155,10 +169,10 @@
 		341F6B002302994C0097B519 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				34AC39232317DDA300F672D8 /* Theming */,
 				34ECA92522F98FD600873D22 /* AppDelegate.swift */,
 				341F6B152306CBC60097B519 /* RootVC.swift */,
 				341F6B042302AA000097B519 /* SplashVC.swift */,
-				341F6B0E23058BBE0097B519 /* Theme.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -178,6 +192,35 @@
 				341F6B1223058CF40097B519 /* ProfileVC.xib */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		34AC391E2317DD9600F672D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				34AC391F2317DD9600F672D8 /* SubscribableValue.swift */,
+				34AC39202317DD9600F672D8 /* Weak.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		34AC39232317DDA300F672D8 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				34AC392A2317DF3C00F672D8 /* Themed.swift */,
+				34AC39242317DDA300F672D8 /* ThemeProvider.swift */,
+				34AC39252317DDA300F672D8 /* AppThemeProvider.swift */,
+				34AC39262317DDA300F672D8 /* AppTheme.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		34AC392C2317E03300F672D8 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				34AC392D2317E03300F672D8 /* AppTabBarController.swift */,
+				34AC392E2317E03300F672D8 /* AppNavigationController.swift */,
+			);
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
 		34ECA91922F98FD600873D22 = {
@@ -203,9 +246,11 @@
 			children = (
 				341F6B002302994C0097B519 /* Core */,
 				341F6AEF23015DAB0097B519 /* Features */,
+				34AC392C2317E03300F672D8 /* Subclasses */,
 				341F6AED23015D720097B519 /* Supporting Files */,
 				341F6AE222FABA600097B519 /* Model */,
 				341F6AE122FABA580097B519 /* Extension */,
+				34AC391E2317DD9600F672D8 /* Helpers */,
 				34ECA92C22F98FD700873D22 /* Assets.xcassets */,
 				346EDE8A23140291001E02E3 /* Colors.xcassets */,
 			);
@@ -358,17 +403,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AC39302317E03300F672D8 /* AppNavigationController.swift in Sources */,
 				341F6AE622FAE2620097B519 /* UIViewExtension.swift in Sources */,
 				341F6AF5230179F90097B519 /* ExerciseListVC.swift in Sources */,
+				34AC39222317DD9600F672D8 /* Weak.swift in Sources */,
+				34AC39292317DDA400F672D8 /* AppTheme.swift in Sources */,
+				34AC392B2317DF3C00F672D8 /* Themed.swift in Sources */,
+				34AC39212317DD9600F672D8 /* SubscribableValue.swift in Sources */,
+				34AC39282317DDA400F672D8 /* AppThemeProvider.swift in Sources */,
+				34AC39272317DDA400F672D8 /* ThemeProvider.swift in Sources */,
 				341F6B0D230587CC0097B519 /* MainTabBarController.swift in Sources */,
 				341F6AFE23018A850097B519 /* HistoryVC.swift in Sources */,
 				341F6AF92301873E0097B519 /* CurrentWorkoutVC.swift in Sources */,
 				341F6B162306CBC60097B519 /* RootVC.swift in Sources */,
 				341F6AE822FC10DB0097B519 /* Exercise.swift in Sources */,
+				34AC392F2317E03300F672D8 /* AppTabBarController.swift in Sources */,
 				34ECA92822F98FD600873D22 /* LoginVC.swift in Sources */,
 				341F6B1323058CF40097B519 /* ProfileVC.swift in Sources */,
 				34ECA92622F98FD600873D22 /* AppDelegate.swift in Sources */,
-				341F6B0F23058BBE0097B519 /* Theme.swift in Sources */,
 				341F6B052302AA000097B519 /* SplashVC.swift in Sources */,
 				341F6B0A2303EC5B0097B519 /* ExerciseListDelegate.swift in Sources */,
 			);
